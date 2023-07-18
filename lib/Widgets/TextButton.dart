@@ -2,14 +2,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ButtonField extends StatelessWidget {
-   ButtonField({required this.text});
+   ButtonField({required this.text , required this.onPressed});
+
+   final VoidCallback onPressed;
 
   String text;
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: onPressed,
       child: Container(
 
         decoration: BoxDecoration(

@@ -73,96 +73,112 @@ class HomePage extends StatelessWidget {
               shrinkWrap: true,
               children: [
                 ButtonField(
+                  onPressed: (){},
                   text: 'الإخـــــــــــــــلاصُ',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'التوبة',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'الصبرُ',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'الصدقُ',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'المُرَاقَبَةُ',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'التَّقْوى',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: ' اليقينِ والتَّوكُّلِ',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'المُرَاقَبَةُ',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'الاستقامةُ',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'المجاهدة',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'كَثْرةُ طُرُقِ الخيرِ',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'الاقتصادُ في العبادةِ',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'الرُّخَصُ الشرعيَّة: أحكامُها وضوابِطُها',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'السُّنَّة النبوية الشريفة',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'المُرَاقَبَةُ',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
                 ButtonField(
+                  onPressed: (){},
                   text: 'أقسام الحكم التكليفي للأمة',
                 ),
                 SizedBox(
@@ -193,102 +209,119 @@ class HomePage extends StatelessWidget {
             ),
           ),
           ButtonField(
+            onPressed: (){},
             text: 'الإخـــــــــــــــلاصُ',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'التوبة',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'الصبرُ',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'الصدقُ',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'المُرَاقَبَةُ',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'التَّقْوى',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: ' اليقينِ والتَّوكُّلِ',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'المُرَاقَبَةُ',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'الاستقامةُ',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'المجاهدة',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'كَثْرةُ طُرُقِ الخيرِ',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'الاقتصادُ في العبادةِ',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'الرُّخَصُ الشرعيَّة: أحكامُها وضوابِطُها',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'السُّنَّة النبوية الشريفة',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'المُرَاقَبَةُ',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'أقسام الحكم التكليفي للأمة',
           ),
           SizedBox(
             height: boxsize,
           ),
           ButtonField(
+            onPressed: (){},
             text: 'التعاون على البر والتقوى',
           ),
           SizedBox(
