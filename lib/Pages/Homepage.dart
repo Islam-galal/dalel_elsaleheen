@@ -1,4 +1,3 @@
-import 'dart:html';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -67,10 +66,117 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
+
+            ),
+            ListView(
+              scrollDirection: Axis.vertical,
+              shrinkWrap: true,
+              children: [
+                ButtonField(
+                  text: 'الإخـــــــــــــــلاصُ',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'التوبة',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'الصبرُ',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'الصدقُ',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'المُرَاقَبَةُ',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'التَّقْوى',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: ' اليقينِ والتَّوكُّلِ',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'المُرَاقَبَةُ',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'الاستقامةُ',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'المجاهدة',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'كَثْرةُ طُرُقِ الخيرِ',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'الاقتصادُ في العبادةِ',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'الرُّخَصُ الشرعيَّة: أحكامُها وضوابِطُها',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'السُّنَّة النبوية الشريفة',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'المُرَاقَبَةُ',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+                ButtonField(
+                  text: 'أقسام الحكم التكليفي للأمة',
+                ),
+                SizedBox(
+                  height: boxsize,
+                ),
+
+              ],
+
+
             ),
 
           ],
         ),
+
       ),
       body: ListView(
         children: [
