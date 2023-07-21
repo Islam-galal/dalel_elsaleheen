@@ -1,14 +1,47 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../Widgets/TextButton.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   HomePage({super.key});
 
   String id = 'homepage';
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+
+//   Future<List<dynamic>> getdata() async{
+//
+//    final _sections  = await Supabase.instance.client.from('Book').select('sections').order('id', ascending: false);
+//
+//    return _sections;
+//
+//
+// }
+  
+
+  //select<List<Map<String, dynamic>>>
+
+
+  @override
+  void initState() {
+
+    print( isDataReturned());
+
+    super.initState();
+
+  }
+
+
+
   double boxsize = 1.0;
+
   double boxsizeheader = 35;
 
   @override
@@ -73,262 +106,143 @@ class HomePage extends StatelessWidget {
               shrinkWrap: true,
               children: [
                 ButtonField(
-                  onPressed: (){},
-                  text: 'الإخـــــــــــــــلاصُ',
+                 
+                  text:'islam',
                 ),
                 SizedBox(
                   height: boxsize,
                 ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'التوبة',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'الصبرُ',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'الصدقُ',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'المُرَاقَبَةُ',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'التَّقْوى',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: ' اليقينِ والتَّوكُّلِ',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'المُرَاقَبَةُ',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'الاستقامةُ',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'المجاهدة',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'كَثْرةُ طُرُقِ الخيرِ',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'الاقتصادُ في العبادةِ',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'الرُّخَصُ الشرعيَّة: أحكامُها وضوابِطُها',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'السُّنَّة النبوية الشريفة',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'المُرَاقَبَةُ',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
-                ButtonField(
-                  onPressed: (){},
-                  text: 'أقسام الحكم التكليفي للأمة',
-                ),
-                SizedBox(
-                  height: boxsize,
-                ),
+                // ButtonField(
+                //  
+                //   text: 'التوبة',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                //  
+                //   text: 'الصبرُ',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                //  
+                //   text: 'الصدقُ',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                //  
+                //   text: 'المُرَاقَبَةُ',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                //  
+                //   text: 'التَّقْوى',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                //  
+                //   text: ' اليقينِ والتَّوكُّلِ',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                // 
+                //   text: 'المُرَاقَبَةُ',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                //  
+                //   text: 'الاستقامةُ',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                //  
+                //   text: 'المجاهدة',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                //   onPressed: (){},
+                //   text: 'كَثْرةُ طُرُقِ الخيرِ',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                //   onPressed: (){},
+                //   text: 'الاقتصادُ في العبادةِ',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                //   onPressed: (){},
+                //   text: 'الرُّخَصُ الشرعيَّة: أحكامُها وضوابِطُها',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                //   onPressed: (){},
+                //   text: 'السُّنَّة النبوية الشريفة',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                //   onPressed: (){},
+                //   text: 'المُرَاقَبَةُ',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
+                // ButtonField(
+                //   onPressed: (){},
+                //   text: 'أقسام الحكم التكليفي للأمة',
+                // ),
+                // SizedBox(
+                //   height: boxsize,
+                // ),
 
               ],
 
 
+            ),
+            FutureBuilder<List<Map<String, dynamic>>>(
+              builder: (context, snapshot) {
+                if (!snapshot.hasData) {
+                  return const Center(child: CircularProgressIndicator());
+                }
+                final data = snapshot.data!;
+                return ListView.builder(
+                  itemCount: data.length,
+                  itemBuilder: ((context, index) {
+                    final sections_data = data[index];
+                    return Expanded(child: ButtonField(text: sections_data['sections']));
+                  }),
+                );
+              },
             ),
 
           ],
         ),
 
       ),
-      body: ListView(
-        children: [
-          const SizedBox(
-            height: 20,
-          ),
-          Center(
-            child: Text(
-              'الفهرس',
-              style: TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'الإخـــــــــــــــلاصُ',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'التوبة',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'الصبرُ',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'الصدقُ',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'المُرَاقَبَةُ',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'التَّقْوى',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: ' اليقينِ والتَّوكُّلِ',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'المُرَاقَبَةُ',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'الاستقامةُ',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'المجاهدة',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'كَثْرةُ طُرُقِ الخيرِ',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'الاقتصادُ في العبادةِ',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'الرُّخَصُ الشرعيَّة: أحكامُها وضوابِطُها',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'السُّنَّة النبوية الشريفة',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'المُرَاقَبَةُ',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'أقسام الحكم التكليفي للأمة',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-          ButtonField(
-            onPressed: (){},
-            text: 'التعاون على البر والتقوى',
-          ),
-          SizedBox(
-            height: boxsize,
-          ),
-        ],
-      ),
+      body:Scaffold(),
     );
   }
 }
